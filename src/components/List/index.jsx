@@ -1,10 +1,13 @@
 import "./style.css"
 
-function List() {
+function List({
+    tittle, subtittlesSecondList = "Minhas listas de compra"
+}) {
     return (
         <section>
-            <h2 id="exemplo-h2" >Seção de Listas</h2>
-            <h3>Lista não ordenada</h3>
+            <h2 id="exemplo-h2" >{ tittle }</h2>
+
+            <h3>{subtittlesSecondList}</h3>
             <ul id="ul" >
                 <li>Batata</li>
                 <li>Pão</li>
